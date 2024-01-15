@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My PortFolio 02</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-[#202422]">
+    <header
+      id="header"
+      class="fixed z-[1000] top-0 left-0 bg-[#202221] w-full h-[15vh] lg:h-[20vh] max-sm:border-b border-gray-600 flex justify-center items-center shadow-2xl"
+    >
+      <div class="content w-[85%] h-[85%] flex justify-between items-center">
+        <nav class="flex gap-8 items-center">
+          <b class="logo text-white text-[30px]">Chris.</b>
+          <a href="#" class="text-[#78907f] max-md:hidden hover:text-white"
+            >About</a
+          >
+          <a href="#" class="text-[#78907f] max-md:hidden hover:text-white"
+            >Service</a
+          >
+          <a href="#" class="text-[#78907f] max-md:hidden hover:text-white"
+            >Journal</a
+          >
+          <a href="#" class="text-[#78907f] max-md:hidden hover:text-white"
+            >Contact</a
+          >
+        </nav>
+        <a href="#" id="menu" class="hidden max-md:block">
+          <span id="menuIcon" class="menu-icon text-white text-[30px]">☰</span>
+        </a>
+        <button
+          class="bg-[#f48f24] px-8 py-4 text-[20px] rounded-lg hover:bg-[#fcc118] max-md:hidden"
+        >
+          <p>Let's Work Together</p>
+        </button>
+      </div>
+    </header>
+    <div
+      id="menuDisplay"
+      class="menu-Display w-full h-[45vh] bg-[#202422] hidden flex-col items-center relative mt-[150px]"
+    >
+      <nav class="w-[85%] my-3 flex flex-col gap-6">
+        <a href="#" class="text-[#78907f] hover:text-white">About</a>
+        <a href="#" class="text-[#78907f] hover:text-white">Service</a>
+        <a href="#" class="text-[#78907f] hover:text-white">Journal</a>
+        <a href="#" class="text-[#78907f] hover:text-white">Contact</a>
+      </nav>
+
+      <button
+        class="bg-[#f48f24] w-[85%] py-4 text-[20px] rounded-lg hover:bg-[#fcc118] text-black"
+      >
+        <p>Let's Work Together</p>
+      </button>
+    </div>
+    <div
+      id="intro"
+      class="intro w-full h-[5vh] flex justify-between items-center mt-[150px]"
+    >
+      <div class="line w-[7.5%]">
+        <div class="lg:w-[85%] w-[90%] border border-[#f48f24]"></div>
+      </div>
+      <div class="intro-text w-[92.5%] max-md:my-4 text-white">
+        <p class="text-[25px]">Hello I'm Chris</p>
+      </div>
+    </div>
+    <div
+      class="intro-description w-full h-fit lg:h-[90vh] my-4 flex justify-center items-center"
+    >
+      <div class="content w-full lg:w-[85%] flex max-md:flex-col">
+        <div class="lg:w-[60%] w-full">
+          <p class="text-white font-bold lg:text-[65px] text-[30px]">
+            "I'm a web developer, skilled in crafting user-friendly digital
+            solutions on the web."
+          </p>
+          <div class="scroll flex gap-4 text-white items-center my-16">
+            <div
+              class="scrollbtn border border-[#f48f24] rounded-full text-white w-[60px] h-[60px] flex justify-center items-center text-[22px]"
+            >
+              <i class="bi bi-arrow-down"></i>
+            </div>
+            <a href="" class="text-[22px]">Scroll for more</a>
+          </div>
+        </div>
+        <div
+          class="lg:w-[40%] w-full flex flex-col justify-center max-md:justify-end"
+        >
+          <div
+            class="w-full text-white h-[80%] flex flex-col justify-end max-md:h-[40vh]"
+          >
+            <ul class="w-full h-fit flex flex-col gap-8">
+              <li class="border-[0.5px] border-[#f48f24]"></li>
+              <li class="border-[0.5px] border-[#f48f24]"></li>
+              <li class="border-[0.5px] border-[#f48f24]"></li>
+              <li class="border-[0.5px] border-[#f48f24]"></li>
+              <li class="border-[0.5px] border-[#f48f24]"></li>
+            </ul>
+          </div>
+          <div
+            class="profile-photo absolute w-full lg:w-fit lg:right-[7.5%] max-md:flex justify-end max-md:h-[40vh]"
+          >
+            <img
+              src="images/chris001-removebg-preview.png"
+              alt="profile-photo"
+              class="lg:w-[350px] max-md:w-[50%] lg:h-[500px] h-full bg-[#797f7f] shadow-2xl max-md:my-8"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="about"
+      class="w-full lg:h-[120vh] h-[170vh] my-16 flex justify-center items-center text-white"
+    >
+      <div class="content w-[90%] lg:w-[85%] h-[90%] lg:flex">
+        <div class="intro lg:w-[50%]">
+          <p class="text-[#f48f24] text-[22px]">About Chris:</p>
+          <p class="lg:text-[60px] text-[40px] font-bold lg:w-[80%] w-[90%]">
+            Crafting Digital Marvels
+          </p>
+          <button
+            class="border-2 px-16 py-4 hover:bg-white hover:text-black text-[18px] rounded-md my-8 max-sm:hidden"
+          >
+            More About Me
+          </button>
+          <div class="socials text-[30px] flex gap-4 max-sm:hidden my-4">
+            <a href=""><i class="hover:text-[#f48f24] bi bi-facebook"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-twitter"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-instagram"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div
+          class="chris-bio lg:w-[50%] h-full text-[22px] flex flex-col gap-4"
+        >
+          <p>
+            Meet Chris, the web wizard weaving digital dreams into reality. With
+            a keyboard as his wand and a screen as his canvas, Chris is the
+            architect of the virtual realm. Driven by an insatiable curiosity
+            and a passion for problem-solving, he navigates the intricate web of
+            codes and commands, crafting seamless and captivating online
+            experiences.
+          </p>
+          <p>
+            From the dance of HTML tags to the symphony of JavaScript functions,
+            Chris orchestrates the elements of the digital landscape with
+            finesse. His love for clean, efficient code is surpassed only by his
+            commitment to creating user-centric designs that leave a lasting
+            impression.
+          </p>
+          <p>
+            In the vast expanse of the web, Chris leaves an indelible mark—one
+            pixel at a time. He is not just a web developer; he is the architect
+            of tomorrow's digital landscapes, shaping the online world with
+            creativity, skill, and a touch of coding magic.
+          </p>
+          <button
+            class="border-2 px-16 py-4 hover:bg-white hover:text-black text-[18px] rounded-md my-4 md:hidden"
+          >
+            More About Me
+          </button>
+          <div class="socials text-[30px] flex gap-4 md:hidden justify-center">
+            <a href=""><i class="hover:text-[#f48f24] bi bi-facebook"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-twitter"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-instagram"></i></a>
+            <a href=""><i class="hover:text-[#f48f24] bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="expertise"
+      class="bg-white w-full lg:h-[220vh] mt-8 flex justify-center items-center"
+    >
+      <div class="content w-[95%] lg:w-[85%] h-[80%]">
+        <p class="text-[#f48f24] text-[25px] max-sm:mt-16">Expertise</p>
+        <div class="expertise w-full h-full md:flex justify-between">
+          <div class="md:w-[47%] intro-section">
+            <h1 class="lg:text-[70px] md:text-[50px] text-[35px] font-bold">
+              My key areas of expertise.
+            </h1>
+            <p class="text-[20px] mt-8">
+              Introducing Chris, an accomplished web development professional
+              with a passion for turning digital visions into reality. Armed
+              with a wealth of experience and a relentless pursuit of
+              excellence, Chris is a seasoned expert in crafting seamless and
+              user-centric online experiences. His journey in the dynamic realm
+              of web development is a testament to his commitment to staying at
+              the forefront of technological advancements and delivering
+              top-notch solutions.
+            </p>
+            <button
+              class="px-16 py-4 hover:bg-black hover:text-white text-[18px] rounded-md mt-16 mb-8 max-md:hidden"
+            >
+              View All Services
+            </button>
+          </div>
+          <div
+            class="md:w-[47%] expertise-details flex flex-col gap-16 max-sm:mt-10"
+          >
+            <ul class="flex flex-col gap-4">
+              <li class="flex gap-4 items-center">
+                <b class="text-[#f48f24] text-[22px]">01.</b>
+                <h2 class="text-[30px] font-bold">React-Mastery</h2>
+              </li>
+              <li>
+                <p class="text-[20px]">
+                  At the heart of Chris's expertise lies front-end development,
+                  where he excels in harnessing the power of React—a versatile
+                  JavaScript library. Chris leverages React's component-based
+                  architecture to create engaging and dynamic user interfaces,
+                  ensuring a smooth and immersive user experience.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-4">
+              <li class="flex gap-4 items-center">
+                <b class="text-[#f48f24] text-[22px]">02.</b>
+                <h2 class="text-[30px] font-bold">Bootstrap Integration</h2>
+              </li>
+              <li>
+                <p class="text-[20px]">
+                  Chris is well-versed in the art of responsive design, ensuring
+                  that websites are not only visually appealing but also
+                  optimized for various devices. His proficiency extends to the
+                  integration of Bootstrap, a popular front-end framework,
+                  enabling rapid development of sleek and responsive UI
+                  components.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-4">
+              <li class="flex gap-4 items-center">
+                <b class="text-[#f48f24] text-[22px]">03.</b>
+                <h2 class="text-[30px] font-bold">
+                  Efficient Styling with Tailwind CSS
+                </h2>
+              </li>
+              <li>
+                <p class="text-[20px]">
+                  Chris is a master of styling with Tailwind CSS, a
+                  utility-first CSS framework known for its efficiency. By
+                  leveraging pre-defined utility classes, he brings designs to
+                  life with remarkable speed, creating modern and visually
+                  captivating user interfaces.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-4">
+              <li class="flex gap-4 items-center">
+                <b class="text-[#f48f24] text-[22px]">04.</b>
+                <h2 class="text-[30px] font-bold">Performance Optimization</h2>
+              </li>
+              <li>
+                <p class="text-[20px]">
+                  Recognizing the significance of speed and performance, Chris
+                  specializes in optimizing web applications. From image
+                  compression to adopting best practices in coding, he ensures
+                  that his creations not only look great but also deliver a
+                  seamless and efficient user experience.
+                </p>
+              </li>
+            </ul>
+            <button
+              class="border-2 px-16 py-4 border-black hover:bg-black hover:text-white text-[18px] rounded-md mt-16 mb-8 md:hidden"
+            >
+              View All Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="client" class="w-full h-fit bg-[#fff7e7]">
+      <div
+        class="intro w-full lg:h-[120vh] max-md:py-8 flex justify-center items-center"
+      >
+        <div class="w-[95%] lg:w-[85%] h-[80%] max-sm:pt-20">
+          <p class="text-[#f48f24] text-[25px]">Clients</p>
+          <div class="w-full md:flex justify-between">
+            <div class="intro md:w-[45%]">
+              <h1
+                class="text-[30px] md:text-[40px] lg:text-[60px] font-bold tracking-tight lg:leading-[80px]"
+              >
+                I have had the privilege of working with these incredible
+                brands.
+              </h1>
+            </div>
+            <div class="clients-description md:w-[50%] max-sm:mt-8">
+              <ul class="flex flex-col gap-16 text-[22px]">
+                <li>
+                  "I was blown away by Chris's expertise and dedication to our
+                  Nike campaign website. His mastery of React not only
+                  transformed our vision into a stunning site but also ensured a
+                  seamless and engaging user experience. Chris's attention to
+                  detail and commitment to excellence truly set him apart. —
+                  Sarah Johnson, Marketing Manager at Nike."
+                </li>
+                <li>
+                  "Working with Chris on our Starbucks Rewards platform was an
+                  absolute pleasure. His ability to integrate Bootstrap
+                  streamlined the development process, resulting in a visually
+                  impressive and responsive site. His professionalism, timely
+                  delivery, and technical prowess make him a standout in the
+                  field of web development. We couldn't be happier with the
+                  results! — Alex Rodriguez, Head of Digital Marketing at
+                  Starbucks."
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="clients-brands w-full h-fit lg:h-[110vh] flex justify-center max-sm:py-16"
+      >
+        <div
+          class="w-[95%] lg:w-[85%] h-[80%] grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 max-sm:grid-cols-1 max-sm:gap-8"
+        >
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-amd text-[40px]"></i>
+              <p class="text-[40px] font-bold">Flash</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-usb-symbol text-[40px]"></i>
+              <p class="text-[40px] font-bold">Cactus</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-bullseye text-[40px]"></i>
+              <p class="text-[40px] font-bold">Pinpoint</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-eye-fill text-[40px]"></i>
+              <p class="text-[40px] font-bold">Vision</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-music-note-beamed text-[40px]"></i>
+              <p class="text-[40px] font-bold">Volume</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-kanban text-[40px]"></i>
+              <p class="text-[40px] font-bold">Hitech</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-bounding-box text-[40px]"></i>
+              <p class="text-[40px] font-bold">Chain</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-amazon text-[40px]"></i>
+              <p class="text-[40px] font-bold">Amazon</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-apple text-[40px]"></i>
+              <p class="text-[40px] font-bold">Apple</p>
+            </a>
+          </div>
+          <div
+            class="border py-10 border-gray-600 max-sm:shadow-lg hover:bg-[#fee6b8] flex justify-center items-center"
+          >
+            <a href="" class="flex items-center gap-4">
+              <i class="bi bi-gitlab text-[40px]"></i>
+              <p class="text-[40px] font-bold">Gitlab</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="reviews w-full lg:h-[80vh] flex flex-col justify-center items-center"
+      >
+        <div
+          class="content w-[95%] lg:w-[85%] h-[90%] flex max-lg:flex-col max-lg:gap-16 lg:justify-between"
+        >
+          <div
+            id="client01"
+            class="client01 lg:w-[32%] max-lg:py-4 h-full flex flex-col gap-8"
+          >
+            <div class="comment01 w-full lg:h-[45vh]">
+              <p class="text-[19px] leading-[32px]">
+                Chris's expertise in building our Apple Store product page was
+                exceptional. His meticulous use of absolute positioning for key
+                images ensured a consistent and visually appealing layout across
+                various devices. Chris's commitment to responsive design greatly
+                contributed to the success of our online platform.
+              </p>
+            </div>
+            <div class="client-profile w-full lg:h-[60px]">
+              <ul class="flex items-center gap-4">
+                <li>
+                  <img
+                    src="images/client04.jpg"
+                    alt="client-photo"
+                    class="w-[55px] h-[55px] rounded-full"
+                  />
+                </li>
+                <li class="flex flex-col">
+                  <b class="text-[22px]">Amanda Carter</b>
+                  <small>Commerce Manager at Apple</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="client02 lg:w-[32%] max-lg:py-4 h-full flex flex-col gap-8"
+          >
+            <div class="comment02 w-full lg:h-[45vh]">
+              <p class="text-[19px] leading-[32px]">
+                Working with Chris on our Google Maps integration was a
+                game-changer. His strategic use of absolute positioning for
+                location markers provided an immersive and intuitive user
+                experience. Chris's attention to detail and ability to make
+                elements stay perfectly positioned on the screen made our
+                mapping feature truly standout.
+              </p>
+            </div>
+            <div class="client-profile w-full lg:h-[60px]">
+              <ul class="flex items-center gap-4">
+                <li>
+                  <img
+                    src="images/client01.jpg"
+                    alt="client-photo"
+                    class="w-[55px] h-[55px] rounded-full"
+                  />
+                </li>
+                <li class="flex flex-col">
+                  <b class="text-[22px]">David Hernandez</b>
+                  <small>Head of Product Development at Google.</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="client03 lg:w-[32%] max-lg:py-4 h-full flex flex-col gap-8"
+          >
+            <div class="comment03 w-full lg:h-[45vh]">
+              <p class="text-[19px] leading-[32px]">
+                Chris's contribution to our Instagram Stories feature was
+                invaluable. His skillful implementation of absolute positioning
+                for story overlays ensured a seamless and engaging user
+                interface. Chris's expertise in maintaining consistent image
+                placement across various screen sizes played a significant role
+                in the success of our social media platform.
+              </p>
+            </div>
+            <div class="client-profile w-full lg:h-[60px]">
+              <ul class="flex items-center gap-4">
+                <li>
+                  <img
+                    src="images/client03.jpg"
+                    alt="client-photo"
+                    class="w-[55px] h-[55px] rounded-full"
+                  />
+                </li>
+                <li class="flex flex-col">
+                  <b class="text-[22px]">Jessica Lewis</b>
+                  <small>Product Manager at Instagram.</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            id="client04"
+            class="client04 lg:w-[32%] max-lg:py-4 h-full flex-col gap-8 hidden"
+          >
+            <div class="comment04 w-full lg:h-[45vh]">
+              <p class="text-[19px] leading-[32px]">
+                Chris's work on our Amazon Prime Video landing page was
+                outstanding. His use of absolute positioning for promotional
+                banners and featured images created a visually stunning and
+                cohesive layout. Chris's dedication to achieving pixel-perfect
+                precision on every screen size contributed to the overall
+                success of our streaming service.
+              </p>
+            </div>
+            <div class="client-profile w-full lg:h-[60px]">
+              <ul class="flex items-center gap-4">
+                <li>
+                  <img
+                    src="images/client05.jpg"
+                    alt="client-photo"
+                    class="w-[55px] h-[55px] rounded-full"
+                  />
+                </li>
+                <li class="flex flex-col">
+                  <b class="text-[22px]">Michael Thompson</b>
+                  <small>UX Design Lead at Amazon.</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btns flex gap-8 my-8">
+          <div
+            id="review-btn1"
+            class="btn1 w-[15px] h-[15px] rounded-full bg-gray-500 hover:bg-gray-800"
+          ></div>
+          <div
+            id="review-btn2"
+            class="btn2 w-[15px] h-[15px] rounded-full bg-gray-500 hover:bg-gray-800"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="consultaion w-full h-screen pt-4 flex justify-center items-center"
+    >
+      <div
+        class="content w-[95%] lg:w-[65%] h-[80%] text-[#fef7e7] text-center"
+      >
+        <h1
+          class="text-[40px] lg:text-[70px] font-bold tracking-tight lg:leading-[80px] my-8"
+        >
+          Get started with a consultant today.
+        </h1>
+        <p class="text-[22px] mt-4">
+          Unlock digital success with Chris's expert consultation services.
+          Elevate your web development strategies, enhance user experiences, and
+          stay ahead in the dynamic online landscape. Leverage Chris's proven
+          expertise for impactful insights and tailored guidance. Your journey
+          to digital excellence starts with a consultation.
+        </p>
+        <button
+          class="bg-[#f48f24] max-sm:w-[90%] px-8 py-4 text-[20px] rounded-lg hover:bg-[#fcc118] text-black mt-8"
+        >
+          <p>Let's Work Together</p>
+        </button>
+      </div>
+    </div>
+    <div
+      class="articles w-full lg:h-[175vh] flex justify-center items-center bg-[#181818]"
+    >
+      <div class="content w-[95%] lg:w-[85%] h-[80%]">
+        <div class="intro text-[#fef7e7] text-center">
+          <p class="text-[#f48f24] text-[22px] max-sm:mt-16">Recent Articles</p>
+          <h1 class="text-[38px] md:text-[45px] lg:text-[65px] font-bold">
+            Latest articles from my blog.
+          </h1>
+        </div>
+        <div
+          id="articles"
+          class="w-full h-fit lg:h-[120vh] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 max-sm:gap-16 max-sm:mt-16"
+        >
+          <div class="">
+            <a href="" class="text-[#f48f24]">Sponsored</a>
+            <h2 class="text-[30px] font-bold text-[#fef7e7]">
+              Need Web Hosting for Your Websites?
+            </h2>
+            <p class="text-[#a3a39a] mt-4 text-[18px]">
+              Need hosting for your website? We would highly recommend
+              <a href="" class="text-[#f48f24]">DreamHost</a>. Enjoy 100%
+              in-house support, guaranteed performance and uptime, 1-click
+              installs, and a super-intuitive control panel to make managing
+              your websites and projects easy.
+              <a href="" class="text-[#f48f24]">Sign up</a> now to get started.
+            </p>
+          </div>
+          <div class="">
+            <a href="" class="text-[#f48f24]">Productivity</a>
+            <h2 class="text-[30px] font-bold text-[#fef7e7]">
+              5 Marketing Productivity Apps for Your Team
+            </h2>
+            <p class="text-[#a3a39a] mt-4 text-[18px]">
+              Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex
+              error ea magni. Aut asperiores sit mollitia. Rem neque et
+              voluptatem eos quia sed eligendi et. Eaque velit eligendi ut
+              magnam. Cumque ducimus laborum doloribus facere maxime vel earum
+              quidem enim suscipit.
+            </p>
+          </div>
+          <div class="">
+            <a href="" class="text-[#f48f24]">SEO</a>
+            <h2 class="text-[30px] font-bold text-[#fef7e7]">
+              7 SEO Factors to Consider for Better Website Ranking
+            </h2>
+            <p class="text-[#a3a39a] mt-4 text-[18px]">
+              Quibusdam quis autem voluptatibus earum vel ex error ea magni.
+              Rerum quam quos. Aut asperiores sit mollitia. Rem neque et
+              voluptatem eos quia sed eligendi et. Eaque velit eligendi ut
+              magnam. Cumque ducimus laborum doloribus facere maxime vel earum
+              quidem enim suscipit.
+            </p>
+          </div>
+          <div class="max-sm:pb-4">
+            <a href="" class="text-[#f48f24]">Productivity</a>
+            <h2 class="text-[30px] font-bold text-[#fef7e7]">
+              5 Effective Web Design Principles
+            </h2>
+            <p class="text-[#a3a39a] my-4 text-[18px]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+              ullam et laborum aperiam. Dignissimos quae voluptatibus ullam esse
+              sapiente fugiat, rerum labore cupiditate obcaecati dolore
+              necessitatibus id magni rem officia dolor nam sit laudantium. Quo
+              eaque eveniet quibusdam unde.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="w-full lg:h-screen flex flex-col justify-center items-center border-t border-gray-500 bg-[#181818]"
+    >
+      <div class="content1 w-[85%] lg:h-[55%] lg:flex max-md:mt-4">
+        <div class="lg:w-[50%] flex flex-col gap-6 text-[#fef7e7]">
+          <h2 class="text-[30px] font-bold">About Chris</h2>
+          <p class="text-gray-400 text-[18px]">
+            In the realm of web development, meet Chris—a seasoned expert
+            dedicated to crafting innovative and user-centric digital solutions.
+            With a proven track record of turning complex ideas into seamless
+            online experiences, Chris brings a wealth of experience and a
+            commitment to excellence. Beyond the lines of code, Chris serves as
+            a reliable guide in navigating the ever-evolving landscape of the
+            digital world. Your journey to digital excellence begins here.
+          </p>
+        </div>
+        <div
+          class="lg:w-[20%] flex lg:justify-center text-[#fef7e7] max-md:mt-4"
+        >
+          <div class="content w-fit flex flex-col gap-6">
+            <h2 class="text-[30px] font-bold">Site Links</h2>
+            <ul class="text-gray-400 text-[18px] flex flex-col gap-4">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Journal</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>DreamHost</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:w-[30%] flex lg:justify-end text-[#fef7e7] max-md:my-4">
+          <div class="content lg:w-[80%] flex flex-col gap-6">
+            <h2 class="text-[30px] font-bold">Newsletter</h2>
+            <ul class="text-gray-400 text-[18px] flex flex-col gap-4">
+              <li class="">
+                Get updates straight to your inbox. Subscribe now.
+              </li>
+              <li>
+                <input
+                  type="email"
+                  class="w-full md:w-[260px] h-[70px] bg-[#242525] rounded-lg shadow-lg text-center border-none outline-none mt-4"
+                  placeholder="Your Email Address"
+                />
+              </li>
+              <li>
+                <button
+                  class="w-full lg:w-[260px] h-[70px] bg-[#f48f24] rounded-lg shadow-lg text-center border-none outline-none text-black"
+                >
+                  Subscribe
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="content2 w-full lg:h-[30vh] flex justify-center items-center max-md:mt-4"
+      >
+        <div class="w-[85%] h-[60%] grid lg:grid-cols-2">
+          <div class="socials text-[30px] flex gap-4 text-white">
+            <a href=""
+              ><i class="text-[#8c8c8c] hover:text-[#f48f24] bi bi-facebook"></i
+            ></a>
+            <a href=""
+              ><i class="text-[#8c8c8c] hover:text-[#f48f24] bi bi-twitter"></i
+            ></a>
+            <a href=""
+              ><i
+                class="text-[#8c8c8c] hover:text-[#f48f24] bi bi-instagram"
+              ></i
+            ></a>
+            <a href=""
+              ><i class="text-[#8c8c8c] hover:text-[#f48f24] bi bi-whatsapp"></i
+            ></a>
+          </div>
+          <div
+            class="flex justify-between items-center max-md:mt-4 max-sm:my-8"
+          >
+            <ul class="text-[#8c8c8c] flex flex-col gap-2">
+              <li>© Copyright ChrisRoyalty 2024</li>
+              <li>
+                Design by
+                <strong class="text-gray-300 hover:text-[#f48f24]"
+                  >ChrisBest</strong
+                >
+                Distribution By
+                <strong class="text-gray-300 hover:text-[#f48f24]"
+                  >TeamChris</strong
+                >
+              </li>
+            </ul>
+            <div class="backto-top">
+              <i
+                id="backToTopBtn"
+                onclick="scrollToTop()"
+                class="bi bi-arrow-up-circle text-gray-500 text-[50px] lg:text-[60px] hover:text-[#f48f24]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
